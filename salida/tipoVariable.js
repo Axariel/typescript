@@ -17,4 +17,15 @@ var Talla;
 })(Talla || (Talla = {}));
 const variable1 = Talla.Grande;
 console.log(variable1);
+const objeto = {
+    id: 1,
+    nombre: "adrian",
+    talla: Talla.Grande,
+    direccion: {
+        numero: 1,
+        calle: "Agueda",
+        pais: "RD"
+    }
+};
+console.log(objeto);
 //# sourceMappingURL=tipoVariable.js.map

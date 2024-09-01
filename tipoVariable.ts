@@ -15,3 +15,35 @@ enum Talla {Chica = 's', Mediana = 'm', Grande = 'g', ExtraGrande = 'xl' }
 const variable1 = Talla.Grande
 console.log(variable1)
 
+type Direccion = {  //con el type defino los atributos de la clase.
+    numero: number,
+    calle: string,
+    pais: string
+
+}
+
+type Persona = {  //con el type defino los atributos de la clase.
+    readonly id: number,
+    nombre: string,
+    talla: Talla,
+    direccion: Direccion
+
+}
+
+
+
+const objeto: Persona ={  //aqui estamos identando el objeto persona , 
+    id:1 , 
+    nombre: "adrian",
+    talla: Talla.Grande,
+    direccion : {
+        numero: 1,
+        calle: "Agueda",
+        pais: "RD"
+
+    }
+   
+} 
+
+console.log(objeto)
+
